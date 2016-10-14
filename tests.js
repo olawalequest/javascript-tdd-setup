@@ -27,6 +27,14 @@ describe("test that the sum of all prime numbers in n are computed correctly", f
         lib.sumofprimes(20),{sum:77});
   });
 
+  it("should give No prime number for when n is 0", function(){
+    assert(
+        lib.sumofprimes(0),"no prime number");
+  });
 
+  it("should give No prime number for when n is 1", function(){
+    assert(
+        lib.sumofprimes(0),"no prime number");
+  });
 
 });
