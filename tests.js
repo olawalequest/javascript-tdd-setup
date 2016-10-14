@@ -37,4 +37,24 @@ describe("test that the sum of all prime numbers in n are computed correctly", f
         lib.sumofprimes(0),"no prime number");
   });
 
+  it("should give Invalid input for when n is -10", function(){
+    assert(
+        lib.sumofprimes(-10),"invalid input");
+  });
+
+  it("should give Invalid input for when n is wale", function(){
+    assert(
+        lib.sumofprimes("wale"),"Invalid input");
+  });
+
+  it("should give Invalid input for when n is andela", function(){
+    assert(
+        lib.sumofprimes("andela"),"invalid input");
+  });
+
+  it("should give Invalid input for when n is ...", function(){
+    assert(
+        lib.sumofprimes("..."),"invalid input");
+  });
+
 });
