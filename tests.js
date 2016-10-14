@@ -57,4 +57,19 @@ describe("test that the sum of all prime numbers in n are computed correctly", f
         lib.sumofprimes("..."),"invalid input");
   });
 
+  it("should give Invalid input for when n is -40", function(){
+    assert(
+        lib.sumofprimes(-40),"invalid input");
+  });
+
+  it("should give 1060 for when n is 100", function(){
+    assert(
+        lib.sumofprimes(100),{sum:1060});
+  });
+
+  it("should give 593823 for when n is 3000", function(){
+    assert(
+        lib.sumofprimes(100),{sum:593823});
+  });
+
 });
